@@ -2,7 +2,7 @@
 
 Independent, bilingual, production-oriented **static corporate website** for `https://tech.elsaidy.org`.
 
-- 32 standalone semantic HTML pages in Arabic and English
+- 34 standalone semantic HTML pages in Arabic and English
 - Responsive custom interface, no account, database, API or admin panel
 - SEO: unique metadata, canonical URLs, hreflang, XML sitemap, Organization structured data
 - Case studies link to supplied real project websites, without invented metrics or testimonials
