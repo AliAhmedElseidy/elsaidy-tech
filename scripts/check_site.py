@@ -58,6 +58,8 @@ def run() -> int:
         full_url = DOMAIN + route
         actual_urls.add(full_url)
         html = path.read_text(encoding="utf-8")
+        if "erpnext" in html.lower():
+            errors.append(f"{path.relative_to(ROOT)}: legacy vendor name in public copy")
         doc = Page()
         doc.feed(html)
         canonical = [x.get("href") for x in doc.links if x.get("rel") == "canonical"]
