@@ -36,3 +36,11 @@ All HTML is already rendered and crawlable; no SSR service required. Can be serv
 ```bash
 python3 -m http.server 8000 --directory site
 ```
+
+## Automated site validation
+
+On push and pull requests, `.github/workflows/site-check.yml` runs `python3 scripts/check_site.py` to validate all generated HTML pages, title/description metadata, canonical/hreflang links, local navigation and sitemap consistency. Run it locally before publishing. A passing static check does not replace browser or Lighthouse testing.
+
+## Content quality
+
+Four article pages now include extended bilingual practical guidance, without unverified client results, ratings or fabricated testimonials. The portfolio uses brand-style typographic panels rather than screenshots; replace these with genuine approved screenshots before presenting them as site captures.
